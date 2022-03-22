@@ -1,0 +1,46 @@
+
+    *{
+        background-color: #191919;
+        font-family: Montserrat;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .head{
+        
+        font-size: 3vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+
+    }
+    
+    .headNav{
+        margin-top: 1vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+    
+    nav a{
+        
+        text-decoration: none;
+        color: white;
+        margin-left: 1vw;
+        margin-right: 1vw;
+
+    }
+
+a:hover{
+    color: blue;
+    transition: 0.3s;
+}
