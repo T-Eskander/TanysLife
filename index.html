@@ -10,21 +10,118 @@
 
     
 </head>
+    <style>
+    *{
+    background-color: #121212;
+    color: white;
+    font-family: Montserrat;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.main{
+    
+}
+
+.head a{
+    font-size: 20px;
+    margin-left: 3vw;
+    text-decoration: none;
+}
+
+a:hover{
+    color: gold;
+    transition: 0.3s;
+}
+
+.head{
+    margin-top: 30px;
+
+    
+}
+
+.mid{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.mid1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.mid3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+
+.post{
+    height: 400px;
+    width: 300px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.post1{
+    height: 600px;
+    width: 800px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.footer{
+    margin-top: 150px;
+    height: 300px;
+    background-color: white;
+    width: 100%;
+}
+    </style>
 <body>
     <div class="main">
         <div class="head">
-            <div class="headNav">
-                <nav>
-                    <a href="#"><img src="img/logo.png"></a>
-                    <a href="#">Home</a>
-                    <a href="#">Profile</a>
-                    <a href="#">Friends</a>
-                    <a href="#">Search</a>
-                </nav>
-            </div>
+            <a href="#"><img src="img/logo@4x.png" style="width: 120px; margin-right: 38vw;"></a>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Tanys</a>        
         </div>
-        <div class="2/3"></div>
-        <div class="3/3"></div>
+        <div class="mid">
+            <div class="post1"></div>
+
+        </div>        <div class="mid1">
+            <div class="info1"><h2>Hello</h2><p>Lorem</p></div>
+
+        </div>        <div class="mid3">
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+        </div>
+        <div class="footer"></div>
     </div>
 </body>
 </html>
