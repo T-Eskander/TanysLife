@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+            Profile 
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+      <style>
+          
+              body{
+    background-color: #1a1a1a;
+    color: white;
+}
+              .container{
+                  margin-top: 40%;
+                  width: 90%;
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+              }
+              
+              .header{
+                  margin-top: 5%;
+                  color: white;
+              }
+              
+              nav{
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: flex-end;
+              }
+              
+              a{
+                  margin-left: 20px;
+                  margin-right: 20px;
+                  color: white;
+                  text-decoration: none;
+                  text-decoration-color: white;
+              }
+              
+              #logo{
+    width: 55%;
+}
+              
+          </style>
+    
+      <body>
+      <div class="header">
+            <nav>
+            <a href="#"><img style="margin-top: -45px;" id="logo" src="img/tanys.png"></a>
+            <a href="profile.html">Profile</a>
+            <a href="profile.html">Login</a>
+            
+          </nav>
+          </div>
+      <div class="container">
+        <h2>Profile</h2>
+        <button onclick="Logout();" style="float: right;">Logout</button>
+        <hr>
+        <h3>Welcome</h3>
+        <h4>Name: <script>document.write(localStorage.getItem('name'));</script></h4>
+      </div>
+                          <div class="upperPhoto"><input type='file' id="inpPhoto" onchange="uplPhoto(this);">
+                    <img id="blah" src="#" alt="Choose Photo" /></div>
+      </body>
+      <script>
+        let name=localStorage.getItem('name')?localStorage.getItem('name'):''
+        console.log(name);
+        if(name=='')
+        {
+          alert('U need to login first');
+          window.location.href="localstorage-part3.html";
+        }
+        function Logout()
+        {
+          localStorage.removeItem('name');
+          localStorage.removeItem('email');
+          window.location.href="localstorage-part3.html";
+        }
+  </script>
+      </html>
